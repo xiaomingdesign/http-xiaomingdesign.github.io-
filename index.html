@@ -1,1 +1,67 @@
-hjghjghghfhfytfyhf
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 方法一 */
+    /* .box {
+      width: 50px;
+      height: 600px;
+      border: 1px solid #000;
+      margin: 100px auto;
+      background: repeating-linear-gradient(45deg, #fff 0 5%, #f00 0 10%, #fff 0 15%, #00f 0 20%);
+      animation: up 5s infinite linear;
+      background-size: 100px 400px;
+    }
+
+    @keyframes up {
+      from {
+        background-position: 0 100px;
+      }
+
+      to {
+        background-position: 0 0;
+      }
+    }
+
+    .box:hover {
+      animation-play-state: paused;
+    } */
+
+    /* 方法二 */
+    .box {
+      height: 20px;
+      width: 200px;
+      background: pink;
+      border-radius: 1000px;
+      background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+      background-size: 20px 20px;
+      /* background-repeat: no-repeat; */
+      animation: up 5s infinite linear;
+    }
+
+    @keyframes up {
+      from {
+        background-position: -100px 0;
+      }
+
+      to {
+        background-position: 0 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+
+  <script>
+    alert('我是个靓仔')
+  </script>
+</body>
+
+</html>
